@@ -23,7 +23,11 @@ The goal is very specific but we hope that you find another good ways to use it.
 As usual, you are **very welcomed** to **share** and **hack** it.
  
 ## Install:
-```$ sudo ln -f path/to/imgorg.py /usr/local/bin/imgorg```
+```$ sudo cp -f path/to/imgorg.py /usr/local/bin/imgorg```
+
+or 
+
+```make install```
 
 ## Usage:
 
