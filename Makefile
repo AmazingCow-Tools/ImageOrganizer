@@ -41,7 +41,7 @@
 
 install:
 	cp -f ./imgorg.py /usr/local/bin/imgorg
-	chmod 744 /usr/local/bin/imgorg
+	chmod 755 /usr/local/bin/imgorg
 
 uninstall:
 	rm -f /usr/local/bin/imgorg
