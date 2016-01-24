@@ -135,8 +135,8 @@ def run():
         #Check if filename is not hidden (.somestuff)
         #And ends with png, jpg or jpeg (somestuff.png|jpg|jpeg)
         if(re.search("^[^\.].*(png|jpg|jpeg)", filename) is None):
-            print_verbose("{} {}".format(full_filename,
-                                         "doesn't look like a image file."));
+            print_verbose("({}) {}".format(full_filename,
+                                           "doesn't look like a image file."));
             continue;
 
         #Load the image...
