@@ -121,7 +121,7 @@ def print_run_info():
     print_verbose("Run info");
     print_verbose("  verbose:     " + str(Globals.verbose));
     print_verbose("  start_path:  " + str(Globals.start_path));
-    print_verbose("  output_path: " + str(Globals.output_path));    
+    print_verbose("  output_path: " + str(Globals.output_path));
 
 ################################################################################
 ## Run                                                                        ##
@@ -130,7 +130,7 @@ def run():
     filenames = os.listdir(Globals.start_path);
     for filename in filenames:
         full_filename = os.path.join(Globals.start_path, filename);
-        
+
         #Check if filename is not hidden (.somestuff)
         #And ends with png, jpg or jpeg (somestuff.png|jpg|jpeg)
         if(re.search("^[^\.].*(png|jpg|jpeg)", filename) is None):
@@ -147,7 +147,7 @@ def run():
             print_fatal(e);
 
         #Log.
-        print_verbose("Loaded: ({}) size:({}x{})".format(full_filename, 
+        print_verbose("Loaded: ({}) size:({}x{})".format(full_filename,
                                                          width,
                                                          height));
 
@@ -157,16 +157,16 @@ def run():
         os.system("mkdir -p {}".format(folder_path));
 
         #Log.
-        print_verbose("Copying: ({}) to folder ({})".format(full_filename, 
+        print_verbose("Copying: ({}) to folder ({})".format(full_filename,
                                                             folder_path));
-        
+
         #Copy the image to folder.
         shutil.copy(full_filename, folder_path);
 
 ################################################################################
 ## Script initialization                                                      ##
 ################################################################################
-def main():   
+def main():
     #Get the options.
     try:
         options = getopt.gnu_getopt(sys.argv[1:],
@@ -174,11 +174,6 @@ def main():
                                     Constants.ALL_FLAGS_LONG);
     except Exception, e:
         print_fatal(e);
-        
-    #Check if we have any flags.
-    if(len(options[0]) == 0):
-        print_help();
-        exit(1);
 
     #Parse the flags.
     for option in options[0]:
