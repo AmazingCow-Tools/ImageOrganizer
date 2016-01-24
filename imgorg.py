@@ -119,9 +119,10 @@ def print_version():
 
 def print_run_info():
     print_verbose("Run info");
-    print_verbose("  verbose:     " + str(Globals.verbose));
-    print_verbose("  start_path:  " + str(Globals.start_path));
-    print_verbose("  output_path: " + str(Globals.output_path));
+    print_verbose("  verbose     :" + str(Globals.verbose));
+    print_verbose("  start_path  :" + str(Globals.start_path));
+    print_verbose("  output_path :" + str(Globals.output_path));
+    print_verbose("");
 
 ################################################################################
 ## Run                                                                        ##
