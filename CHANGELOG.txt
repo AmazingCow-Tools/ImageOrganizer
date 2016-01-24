@@ -1,2 +1,11 @@
 version 0.1:
 [Set 1 2015] - Finish the implementation.
+
+
+version 0.1.1:
+[Jan 24 2016] -
+    Fix the flags checking - Now the imgorg can run without any flags.
+    Add the comment separators in README.
+    Update the license headers.
+    Update the version info.
+
