@@ -1,11 +1,54 @@
-version 0.1:
-[Set 1 2015] - Finish the implementation.
+================================================================================
+| Version 0.2.x                                                                |
+================================================================================
+[v0.2.0] April 18, 2016
+-- General --
+    - Starting using cowtermcolor for coloring.
+    - New sort modes --by-size and --by-format.
+    - Bettter error handling.
+    - Update the README for consistency with other AmazingCow READMEs.
+
+-- Source --
+    imgorg.py
+        - Fix the typo in license header.
+        - Sort the imports
+        - Add a function to handle non standards import errors.
+        - Start using the cowtermcolor.
+        - Add new flags.
+        - Update version number.
+        - Add the Color objects.
+        - Add print_error function to print non fatal errors regardless
+          of the verbose mode.
+        - Change the signature of print_verbose to let the new line optional.
+        - Update help screen.
+        - Add some functions.
+        - Add more verification on paths passed by user.
+        - Add better error support.
+        - Make the imgorg recognize the image filenames regardless of case.
+        - Update the output messages.
+        - Add options to sort by format and by size (or both).
+        - Add some cosmetic changes.
+
+-- Info Files --
+    README.md
+        - Update the README for consistency with other AmazingCow READMEs.
+        - Add the OLDREADME.md for sake of history.
+    CHANGELOG.txt
+        - Sort the entries - Now newer entries are on top.
+        - Add separator between the versions
 
 
+================================================================================
+| Version 0.1.x                                                                |
+================================================================================
 version 0.1.1:
 [Jan 24 2016] -
     Fix the flags checking - Now the imgorg can run without any flags.
     Add the comment separators in README.
     Update the license headers.
     Update the version info.
+
+--------------------------------------------------------------------------------
+version 0.1:
+[Set 1 2015] - Finish the implementation.
 
