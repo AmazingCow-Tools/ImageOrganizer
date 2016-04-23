@@ -63,7 +63,7 @@ Notes:
 
 ## Install:
 
-Use the Mafefile.
+Use the Makefile.
 
 ``` bash
     make install
